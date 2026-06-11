@@ -46,7 +46,7 @@ First I uploaded the CSV file to Databricks. Then I cleaned the
 data by fixing the column types because some number columns were 
 stored as text. After cleaning I saved everything into Delta Lake 
 which is a faster storage format. This whole process is called 
-an ETL pipeline — Extract, Transform, and Load.
+an ETL pipeline : Extract, Transform, and Load.
 
 Task 2 : MapReduce Analysis
 
