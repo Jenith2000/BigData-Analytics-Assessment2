@@ -1,6 +1,6 @@
 # Big Data Analytics — Assessment 2
 
-Course: GDDA709 / BBIM709 — Big Data Analytics  
+Course: GDDA709 / BBIM709 : Big Data Analytics  
 Institution: New Zealand Skills and Education College (NZSE)
 
 What is this project about?
@@ -29,18 +29,18 @@ the original CSV file.
 
 Files in this repository
 
-- Assessment2_BigData.ipynb — This is my main Databricks notebook. 
+- Assessment2_BigData.ipynb : This is my main Databricks notebook. 
   It has all my code and the output results. You can click on it 
   and see everything directly in GitHub without needing any software.
 
-- indian_banking_transactions.zip — This is the dataset I used. 
+- indian_banking_transactions.zip : This is the dataset I used. 
   Extract it to get the CSV file.
 
-- README.md — This file that you are reading right now.
+- README.md : This file that you are reading right now.
 
 What I did in each task
 
-Task 1 — Setting up the data pipeline
+Task 1 : Setting up the data pipeline
 
 First I uploaded the CSV file to Databricks. Then I cleaned the 
 data by fixing the column types because some number columns were 
@@ -48,7 +48,7 @@ stored as text. After cleaning I saved everything into Delta Lake
 which is a faster storage format. This whole process is called 
 an ETL pipeline — Extract, Transform, and Load.
 
-Task 2 — MapReduce Analysis
+Task 2 : MapReduce Analysis
 
 I ran three MapReduce jobs using PySpark to analyse the data. 
 The first one looked at fraud by state and I found that Maharashtra 
@@ -57,7 +57,7 @@ channel people use most and Mobile App was the highest with over
 200,000 transactions. The third one was a time series analysis 
 showing monthly transaction trends from 2019 to 2020.
 
-Task 3 — Machine Learning
+Task 3 : Machine Learning
 
 I built two models. The first one was a Random Forest model to 
 classify whether a transaction is fraud or not. It got 99.11% 
@@ -66,12 +66,12 @@ the transaction amount, which got an R2 score of 1.0. I also
 made charts to show the feature importance and how close the 
 predictions were to the actual values.
 
-Task 4 — Discussion and Conclusion
+Task 4 : Discussion and Conclusion
 
 In this task I wrote about what I found from all the analysis. 
 The most interesting thing I found was that transaction amount 
 is the strongest signal for detecting fraud. I also discussed 
-why the AUC-ROC score was low even though accuracy was high — 
+why the AUC-ROC score was low even though accuracy was high - 
 this is because fraud cases are very rare in the dataset (less 
 than 1%) which causes class imbalance.
 
